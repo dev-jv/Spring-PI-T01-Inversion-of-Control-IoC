@@ -31,5 +31,42 @@ public class UsoEmpleados {
 		
 	}
 
-}
+} 
 
+/*
+
+	//--> 1
+
+>	ClassPathXmlApplicationContext contexto = new ClassPathXmlApplicationContext("applicationContext.xml");
+
+	Creamos el contexto
+	Creamos un objeto o instancia de la clase ClassPathXmlApplicationContext
+	Cargamos el archivo xml
+	Requiere importar el paquete correspondiente
+	
+	
+	//--> 2
+	
+>	Empleados Juan = contexto.getBean("miEmpleado", Empleados.class);
+	
+	Crea un empleado con la interfaz (abstracción)
+	Obtenemos el bean con .getBean utilizando como referencia a contexto
+	Recibe dos parámetros, el nombre (id) del generador y un enlace a la interfaz 
+	
+	
+	//--> 3
+	
+>	System.out.println(Juan.getTareas());
+
+	Utilizamos el método (haciendo uso del bean)
+
+	//--> 4
+	
+>	contexto.close();
+	
+	Cerramos el xml
+	
+*/
+	
+	
+	
